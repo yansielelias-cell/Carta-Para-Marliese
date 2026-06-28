@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Feliz Cumpleaños ❤️</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #0f0f0f;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+      }
+
+      section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .hero img,
+      .photo img {
+        width: 90%;
+        max-width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      }
+
+      .hero h1 {
+        margin-top: 20px;
+        font-size: 3rem;
+      }
+
+      .hero p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      button {
+        margin-top: 30px;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .text-block {
+        max-width: 700px;
+      }
+
+      .text-block p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+      }
+
+      .final h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .final p {
+        font-size: 1.5rem;
+      }
+
+      .hidden {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s;
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .code-love {
+        margin-top: 30px;
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 15px;
+        font-family: Consolas, monospace;
+      }
+
+      /* Oculta el reproductor de YouTube de la vista */
+      #yt-player {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="yt-player"></div>
+
+    <section class="hero">
+      <img src="uno.jpeg" alt="" />
+
+      <h1>Feliz Cumpleaños ❤️</h1>
+
+      <p>He preparado algo especial para ti.</p>
+
+      <button id="startBtn">Abrir Carta</button>
+    </section>
+
+    <section class="text-block hidden">
+      <p>
+        Marliese Bahirma Días Sosa... el hermoso nombre de la persona que más
+        amo en este mundo. Mi mente se queda corta al intentar expresar todos
+        los pensamientos y sentimientos tan bonitos que tengo hacia ti. Eres la
+        chica que más admiro en esta vida y, aunque a veces no encuentre las
+        palabras perfectas, quiero que sepas que cada una de ellas nace desde lo
+        más profundo de mi corazón. Gracias por llegar a la vida de este chico
+        un poco terco, medio difícil... y aun así decidir quedarte. ❤️ Esta es
+        una pequeña carta hecha especialmente para ti. Espero que disfrutes cada
+        palabra, porque todas fueron escritas pensando únicamente en ti. <333
+      </p>
+    </section>
+
+    <section class="photo hidden">
+      <img src="dos.jpeg" alt="" />
+    </section>
+
+    <section class="text-block hidden">
+      <p>
+        Quizás no esperabas que esta carta llegara después de los pequeños
+        inconvenientes que tuvimos, e incluso llegaste a pensar que ya no
+        existiría. Pero si hay algo que he aprendido es que un solo día hablando
+        contigo basta para inspirarme a escribirte páginas enteras, o incluso
+        una canción si fuera necesario. Porque cuando se trata de ti, las
+        palabras aparecen solas. Lo único que deseo es que la vida te regale
+        todo lo bonito que mereces, porque eres una mujer increíble y me siento
+        inmensamente orgulloso de poder decir que eres la chica que ocupa mi
+        corazón. Amo cada parte de ti, tu cuerpo, tu sonrisa y cada pequeño
+        detalle que algunas personas podrían llamar imperfecciones. Para mí,
+        esas "imperfecciones" solo hacen que quiera amarte todavía más y hacerte
+        sentir la mujer más cómoda, segura y amada del mundo. Amo cuando sacas
+        tu lado peleón porque sé que también forma parte de quien eres, pero amo
+        aún más cuando dejas volar esa creatividad tan hermosa que tienes y me
+        sorprendes con tu forma de ver la vida.
+      </p>
+    </section>
+
+    <section class="photo hidden">
+      <img src="3.jpeg" alt="" />
+    </section>
+
+    <section class="text-block hidden">
+      <p>
+        No cambiaría ninguno de los momentos que he vivido contigo, ni siquiera
+        por todo el oro del mundo. Mi mayor anhelo en esta vida es construir un
+        futuro a tu lado, donde seamos un solo equipo, apoyándonos, amándonos y
+        caminando juntos hasta el fin de nuestros días. No me interesa mirar
+        hacia otro lugar porque mi corazón ya encontró el sitio donde quiere
+        quedarse. Pensar que algún día pudieras no estar conmigo es suficiente
+        para entristecerme, porque uno de mis mayores placeres es simplemente
+        verte, especialmente cuando eres tú al natural: con tu cabello un poco
+        desordenado, tus ojitos con esas pequeñas ojeras que tanto adoro, sin
+        preocuparte por aparentar nada. Ahí es cuando más hermosa me pareces.
+        Amo tu cabello cuando está rizado porque te ves tan tierna que dan ganas
+        de abrazarte para siempre, y cuando lo llevas liso no puedo evitar
+        pensar que tengo a mi lado un mujerón increíble. Me emociona cuando me
+        presumes con tus amigas, pero, sobre todo, amo que seas una persona que
+        me acerca más a Dios y me motive a buscarlo cada día. Ese es, sin duda,
+        el regalo más grande que me has dado. Gracias por estar siempre para mí
+        cuando más te necesito, por hacer de mi vida un lugar mejor y, sobre
+        todo, gracias por ser mi mayor bendición. ❤️
+      </p>
+    </section>
+
+    <section class="photo hidden">
+      <img src="1.jpeg" alt="" />
+    </section>
+
+    <section class="final hidden">
+      <h1>Te Amo ❤️</h1>
+
+      <p>Feliz cumpleaños mi amor.</p>
+
+      <div class="code-love">
+        const myGreatestBlessing = "Marliese ❤️"; while (life) {
+        thankGod(myGreatestBlessing); love(myGreatestBlessing); }
+      </div>
+    </section>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+      let player;
+
+      // Esta función la llama automáticamente la API al cargar
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("yt-player", {
+          height: "360",
+          width: "640",
+          videoId: "ik3JlXP8-64", // Tu canción
+          playerVars: {
+            autoplay: 0,
+            controls: 0,
+            loop: 1,
+            playlist: "ik3JlXP8-64",
+          },
+        });
+      }
+
+      // Evento del botón para abrir la carta
+      document.getElementById("startBtn").addEventListener("click", () => {
+        // Obliga a YouTube a reproducir el audio al hacer clic
+        if (player && typeof player.playVideo === "function") {
+          player.playVideo();
+        }
+
+        // Hace el scroll hacia abajo de forma fluida
+        window.scrollTo({
+          top: window.innerHeight,
+          behavior: "smooth",
+        });
+      });
+
+      // Animaciones de scroll (Intersection Observer)
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      document.querySelectorAll(".hidden").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
