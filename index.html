@@ -112,7 +112,7 @@
     <div id="yt-player"></div>
 
     <section class="hero">
-      <img src="uno.jpeg" alt="" />
+      <img src="uno.jpeg" alt="Portada" />
 
       <h1>Feliz Cumpleaños ❤️</h1>
 
@@ -123,7 +123,7 @@
 
     <section class="text-block hidden">
       <p>
-        Marliese Bahirma Días Sosa... el hermoso nombre de la persona que más
+        Marliese Bahirma Días Sosa... el hermoso name de la persona que más
         amo en este mundo. Mi mente se queda corta al intentar expresar todos
         los pensamientos y sentimientos tan bonitos que tengo hacia ti. Eres la
         chica que más admiro en esta vida y, aunque a veces no encuentre las
@@ -131,12 +131,12 @@
         más profundo de mi corazón. Gracias por llegar a la vida de este chico
         un poco terco, medio difícil... y aun así decidir quedarte. ❤️ Esta es
         una pequeña carta hecha especialmente para ti. Espero que disfrutes cada
-        palabra, porque todas fueron escritas pensando únicamente en ti. <333
+        palabra, porque todas fueron escritas pensando únicamente en ti. &lt;333
       </p>
     </section>
 
     <section class="photo hidden">
-      <img src="dos.jpeg" alt="" />
+      <img src="dos.jpeg" alt="Foto 1" />
     </section>
 
     <section class="text-block hidden">
@@ -160,7 +160,7 @@
     </section>
 
     <section class="photo hidden">
-      <img src="3.jpeg" alt="" />
+      <img src="3.jpeg" alt="Foto 2" />
     </section>
 
     <section class="text-block hidden">
@@ -187,7 +187,7 @@
     </section>
 
     <section class="photo hidden">
-      <img src="1.jpeg" alt="" />
+      <img src="1.jpeg" alt="Foto 3" />
     </section>
 
     <section class="final hidden">
@@ -201,6 +201,7 @@
       </div>
     </section>
 
+    <!-- Cargamos la API de YouTube -->
     <script src="https://www.youtube.com/iframe_api"></script>
 
     <script>
@@ -215,9 +216,13 @@
           playerVars: {
             autoplay: 0,
             controls: 0,
-            loop: 1,
-            playlist: "ik3JlXP8-64",
+            loop: 0, // No se repetirá automáticamente
           },
+          events: {
+            onReady: (event) => {
+              event.target.setVolume(15); // Música de fondo sutil al 15%
+            }
+          }
         });
       }
 
